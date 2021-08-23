@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Survey Page</title>
+        <link rel='stylesheet' href="Survey.css"/>
+       
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+            <h1>freeCodeCamp Survey Form</h1>
+            <p>Thank you for taking the time for help us improve the platform</p>
+            </div>
+            <div class="form">
+                <div class="main-form">
+                <form >
+                    <!-- name input -->
+                <div class="name">
+                    <label for="name">
+                    <h2 class="main-head">Name</h2>
+                    <input type="text" name="name" placeholder="Enter Your Name" required class="main-input"/>
+                    </label>
+                </div>
+                 
+                <!-- email input -->
+                <div class="email">
+                    <label for="email">
+                    <h2 class="main-head">Email</h2>
+                    <input type="email" name="email" placeholder="Enter Your Email" required class="main-input"/>
+                   </label>   
+                </div>
+               
+                        <!-- age input -->
+                   <div class="age">
+                       <label for="number">
+                     <h2 class="main-head">Age(Optional)</h2>
+                     <input type="number"  placeholder="Age" name="age" min="10" max="99" class="main-input"/>
+                     </label>
+                   </div>
+                  
+                    <!-- current role -->
+                   <div class="role">
+                       <h2 class="main-head">Which option best describes your current role?</h2>
+                          <select class="option1" name="role" required>
+                               <option disabled selected value='select current role'>Select Current role</option> 
+                               <option value="student">Student</option>   
+                               <option value="job">Full Time Job</option>
+                               <option value='learner'>Full Time Learner</option>
+                               <option value='notprefer'>Prefer Not to Say</option>
+                               <option value="other">Other</option>
+                          </select>
+                      </div>
+
+                       
+
+                      <div class="recommend">
+                           <h2 class="main-head">Would you recommend freeCodeCamp to a friend?</h2>
+                           <label class="radio-label">
+                               <input name="recommend" type="radio" value="definitely" class="main-radio"/>
+                                 Definitely
+                           </label>
+                           <label class="radio-label">
+                               <input name="recommend" type="radio" value="maybe" class="main-radio"/>
+                               Maybe
+                           </label>
+                           <label class="radio-label">
+                               <input name="recommend" type="radio" value="notsure" class="main-radio"/>
+                               Not Sure
+                           </label>
+                      </div>
+                    
+                      <div class="favourite">
+                           <h2 class="main-head">What is your favourite feature of freeCodeCamp?</h2>
+                           <select name="favourite" class="option2" required>
+                               <option disabled selected value="selct an option">Select an option</option>
+                                <option value='challenges'>Challenges</option>
+                                <option value="projects">Projects</option>
+                                <option value="community">Community</option>
+                                <option value="osource">Open Source</option>
+                            </select>
+                      </div>
+                         
+                            <div class="improved">
+                                <h2 class="main-head">What would you like to see improved? (check all that apply)</h2>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="frontend" class="main-checkbox"/>
+                                    Front-end Projects
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="backend" class="main-checkbox"/>
+                                    Back-end Projects
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="datavis" class="main-checkbox"/>
+                                    Data Visualisation
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="opensrc" class="main-checkbox"/>
+                                  Open Source Community
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="gitter" class="main-checkbox"/>
+                                    Gitter help rooms
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="Videos" class="main-checkbox"/>
+                                    Videos
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="citymeet" class="main-checkbox"/>
+                                    City Meetups
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="wiki" class="main-checkbox"/>
+                                    Wiki
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="forum" class="main-checkbox"/>
+                                    Forum
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="additionalcourses" class="main-checkbox"/>
+                                    Additional Courses
+                                </label>
+                            </div>
+                           
+                                <div class="comments">
+                                    <h2 class="main-head">Any comments or suggestions?</h2>
+                                        <textarea required placeholder="Enter your comment here..." name="comments" class="input-textarea"></textarea>                                              
+                                </div>
+                          
+                     <br />
+                      <div class="button">
+                   <button type="submit" onclick="myFunction()" class="form-button">Submit</button>
+                      </div>
+                </form>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+    <script src="Survey.js"></script>
+    </html>
